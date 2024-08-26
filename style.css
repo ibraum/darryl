@@ -107,13 +107,22 @@ header nav{
 }
 
 #me{
-    width: 95%;
+    width: 100%;
     height: 100svh;
+    background: linear-gradient(0deg,#ffffff, #ffffffaf, #ffffff), url(assets/images/pattern.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-#img{
-    filter: grayscale(1);
-    width: 450px;
-    mix-blend-mode:luminosity;
-    opacity: 0.65;
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+@media screen and (max-width: 600px) {
+    .date{
+        color: var(--black);
+    }    
 }
